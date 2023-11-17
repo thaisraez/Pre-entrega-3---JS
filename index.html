@@ -3,15 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <title>Ninfa - Tienda Virtual</title>
 </head>
 <body>
-    <h1>Ninfa - Tienda Virtual</h1>
-    <div id="productos"></div>
-    <div id="carrito"></div>
-    <button id="comprar">Realizar compra</button>
-    
-    <script src="main.js">
-    </script>
+    <header>
+        <!-- Logo -->
+        <img src="/imagenes/logo.png" alt="Ninfa Logo" height="20px">
+    </header>
+
+    <section class="segunda-seccion" id="productos">
+    </section>
+
+    <section class="carrito-seccion">
+        <h2>Carrito de compras</h2>
+        <div id="carrito"></div>
+        <p id="total-carrito">Total del carrito: $0</p>
+        <!-- Mantenemos solo el botón "Pagar" -->
+        <button id="pagar" onclick="procederAlPago()">Pagar</button>
+    </section>
+
+    <script src="main.js"></script>
 </body>
 </html>
